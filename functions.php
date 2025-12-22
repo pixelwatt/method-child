@@ -36,6 +36,9 @@
 //     This is where you declare CMB2 metaboxes and specify which
 //     of the options each box loads.
 //
+// 9.  lib/admin-customization.php
+//     This file contains admin customizations and optimizations.
+//
 //======================================================================
 
 
@@ -53,3 +56,4 @@ require_once('lib/post-types-and-taxonomies.php');
 require_once('lib/cmb2-helper-functions.php');
 require_once('lib/cmb2-options-loader.php');
 require_once('lib/cmb2-metaboxes.php');
+require_once('lib/admin-customization.php');
