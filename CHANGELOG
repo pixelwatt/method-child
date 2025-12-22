@@ -1,0 +1,6 @@
+## 1.0.0-beta2
+
+Changes:
+* ( NEW FILE: CHANGELOG )
+* ( README.md ) Updated readme with image.
+* ( gulpfile.js ) Added watch-styles task to gulpfile. This task will watch scss files and recompile on edit, but will not start a browsersync session.

@@ -72,3 +72,11 @@ gulp.task('serve', function () {
         ]
     ).on('change', browserSync.reload);
 });
+
+gulp.task('watch-styles', function () {
+    // Watch all SCSS files for live injection
+    gulp.watch(
+        ['./**/*.scss', '!./node_modules/**', '!./.git/**'],
+        gulp.series('compile-all-styles')
+    );
+});
