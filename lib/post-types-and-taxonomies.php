@@ -2,6 +2,8 @@
 
 //======================================================================
 // CUSTOM POST TYPES
+//
+// To use the block editor, make sure to include "show_in_rest"
 //======================================================================
 
 
@@ -11,25 +13,25 @@ add_action( 'init', 'method_child_news_init' );
 
 function method_child_news_init() {
 	$labels = array(
-		'name'               => _x( 'News', 'post type general name', 'method' ),
-		'singular_name'      => _x( 'News Item', 'post type singular name', 'method' ),
-		'menu_name'          => _x( 'News', 'admin menu', 'method' ),
-		'name_admin_bar'     => _x( 'News Item', 'add new on admin bar', 'method' ),
-		'add_new'            => _x( 'Add News Item', 'job', 'method' ),
-		'add_new_item'       => __( 'Add New News Item', 'method' ),
-		'new_item'           => __( 'New News Item', 'method' ),
-		'edit_item'          => __( 'Edit News Item', 'method' ),
-		'view_item'          => __( 'View News Item', 'method' ),
-		'all_items'          => __( 'News', 'method' ),
-		'search_items'       => __( 'Search News', 'method' ),
-		'parent_item_colon'  => __( 'Parent News:', 'method' ),
-		'not_found'          => __( 'No news found.', 'method' ),
-		'not_found_in_trash' => __( 'No news found in Trash.', 'method' )
+		'name'               => _x( 'News', 'post type general name', 'method-child' ),
+		'singular_name'      => _x( 'News Item', 'post type singular name', 'method-child' ),
+		'menu_name'          => _x( 'News', 'admin menu', 'method-child' ),
+		'name_admin_bar'     => _x( 'News Item', 'add new on admin bar', 'method-child' ),
+		'add_new'            => _x( 'Add News Item', 'job', 'method-child' ),
+		'add_new_item'       => __( 'Add New News Item', 'method-child' ),
+		'new_item'           => __( 'New News Item', 'method-child' ),
+		'edit_item'          => __( 'Edit News Item', 'method-child' ),
+		'view_item'          => __( 'View News Item', 'method-child' ),
+		'all_items'          => __( 'News', 'method-child' ),
+		'search_items'       => __( 'Search News', 'method-child' ),
+		'parent_item_colon'  => __( 'Parent News:', 'method-child' ),
+		'not_found'          => __( 'No news found.', 'method-child' ),
+		'not_found_in_trash' => __( 'No news found in Trash.', 'method-child' )
 	);
 
 	$args = array(
 		'labels'             => $labels,
-		'description'        => __( 'A description for the post type.', 'method' ),
+		'description'        => __( 'A description for the post type.', 'method-child' ),
 		'public'             => true,
 		'publicly_queryable' => true,
 		'show_ui'            => true,
@@ -39,7 +41,8 @@ function method_child_news_init() {
 		'hierarchical'       => false,
 		'menu_position' 	 => 5,
 		'menu_icon'			 => 'dashicons-megaphone',
-		'supports'           => array( 'title' , 'editor' )
+		'supports'           => array( 'title' , 'editor' ),
+		'show_in_rest'       => true,
 	);
 
 	register_post_type( 'news', $args );

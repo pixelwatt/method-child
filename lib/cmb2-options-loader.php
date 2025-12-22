@@ -11,16 +11,16 @@ function method_child_load_cmb2_options( &$obj, $temps ) {
 			case 'example':
 				$obj->add_field(
 					array(
-						'name'     => __( '<span style="font-size: 1.5rem; font-weight: 900;">Example Section</span>', 'method' ),
-						'id'   => '_method_example_info',
+						'name'     => __( '<span style="font-size: 1.5rem; font-weight: 900;">Example Section</span>', 'method-child' ),
+						'id'   => '_method_child_example_info',
 						'type'     => 'title',
 					)
 				);
 				$obj->add_field(
 					array(
-						'name'     => __( 'Headline', 'method' ),
-						'desc'     => __( 'Provide a headline for this item.', 'method' ),
-						'id'   => '_method_example_headline',
+						'name'     => __( 'Headline', 'method-child' ),
+						'desc'     => __( 'Provide a headline for this item.', 'method-child' ),
+						'id'   => '_method_child_example_headline',
 						'type'     => 'text',
 					)
 				);
