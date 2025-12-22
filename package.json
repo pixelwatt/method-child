@@ -1,6 +1,6 @@
 {
   "name": "Method Child",
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "All of the blocks!",
   "main": "index.js",
   "scripts": {
