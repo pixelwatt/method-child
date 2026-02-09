@@ -10,3 +10,21 @@ function method_child_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'method_child_scripts' );
+
+
+//-----------------------------------------------------
+// Optionally, add additional social network link
+// support to the Method options panel and the social
+// nav block
+//-----------------------------------------------------
+/*
+function method_child_additional_social_platforms( $platforms ) {
+    $platforms['gitlab'] = array(
+        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gitlab" viewBox="0 0 16 16"><path d="m15.734 6.1-.022-.058L13.534.358a.57.57 0 0 0-.563-.356.6.6 0 0 0-.328.122.6.6 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.67.67 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.05 4.05 0 0 0 1.34-4.668Z"/></svg>',
+        'label' => 'GitLab',
+    );
+    return $platforms;
+}
+
+add_filter( 'method_available_social_platforms', 'method_child_additional_social_platforms', 10, 1 );
+*/
