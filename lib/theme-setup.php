@@ -28,3 +28,35 @@ function method_child_additional_social_platforms( $platforms ) {
 
 add_filter( 'method_available_social_platforms', 'method_child_additional_social_platforms', 10, 1 );
 */
+
+
+//-----------------------------------------------------
+// Optionally, add theme-specific options to Method's
+// options page.
+//-----------------------------------------------------
+
+/*
+add_action( 'method_options_before_fields', 'method_child_register_custom_options' );
+
+function method_child_register_custom_options( $cmb_options ) {
+    $cmb_options->add_field(
+		array(
+			'name'     => __( 'Theme Configuration', 'method-child' ),
+			'id'       => 'theme_info',
+			'type'     => 'title',
+		)
+	);
+    
+*/
+
+
+//-----------------------------------------------------
+// Optionally, enable responsive embeds.
+//-----------------------------------------------------
+
+/*
+function method_child_theme_setup() {
+	add_theme_support( 'method-responsive-embeds' );
+}
+add_action( 'after_setup_theme', 'method_child_theme_setup' );
+*/
